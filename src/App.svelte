@@ -1,10 +1,23 @@
 <script>
-	export let name;
+	let nodevalue=0;
+	var socket = io();
+	function handleSubmit(){
+		event.preventDefault();
+		if (nodevalue>0) {
+			socket.emit('chat-message', nodevalue);
+			nodevalue = 0;
+		}
+	}
+	function handleChange(){
+		nodevalue = event.target.value;
+		console.log(nodevalue);
+	}
 </script>
-
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<form on:submit={handleSubmit}>
+		<input type="number" max="200" min="1" value={nodevalue} on:change={handleChange} required/>
+		<button type="submit">Submit</button>
+	</form>
 </main>
 
 <style>
@@ -13,13 +26,6 @@
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
 	}
 
 	@media (min-width: 640px) {

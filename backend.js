@@ -5,11 +5,24 @@ const cors = require('cors');
 const path = require('path');
 
 const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
+
 app.use(express.static('public'));
 app.use(cors());
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname,'public','/index.html'));
+});
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+  socket.on('chat-message',(msg)=>{
+    console.log(msg);
+  });
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
 });
 
 server.listen(3000, () => {
