@@ -1,3 +1,6 @@
+<script>
+    export let handleClick;
+</script>
 <svg width="423.33mm" height="317.5mm" version="1.1" viewBox="0 0 423.33 317.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <g>
   <rect x="6.1457" y="11.46" width="396.67" height="297.32" fill="#fff" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".26458"/>
@@ -40,20 +43,20 @@
   </g>
  </g>
  <g transform="translate(150.07 119.72)" stroke-width=".26458">
-  <g id="node2">
+  <g on:click={handleClick} id="node2">
    <path d="m-28.041-105.68a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-28.852087" y="-101.34781" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="3.3706px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-28.852087" y="-101.34781" font-family="FreeSans" stroke-width=".26458">2</tspan></text>
   </g>
-  <g id="node10">
+  <g on:click={handleClick} id="node10">
    <path d="m-5.1676-85.232a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-6.9005327" y="-80.937424" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-6.9005327" y="-80.937424" font-family="FreeSans" stroke-width=".26458">10</tspan></text>
   </g>
-  <g id="node11">
+  <g on:click={handleClick} id="node11">
    <path d="m15.739-81.703a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="14.243834" y="-77.373672" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="14.243834" y="-77.373672" font-family="FreeSans" stroke-width=".26458">11</tspan></text>
   </g>
   <path d="m-135.17-43.646a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
-  <g id="node73">
+  <g on:click={handleClick} id="node73">
    <path d="m-123.81-14.144a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-125.45918" y="-9.848918" fill="#000000" font-family="FreeSans" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-125.45918" y="-9.848918">73</tspan><tspan x="-125.45918" y="-6.1302686"/></text>
   </g>
@@ -65,7 +68,7 @@
   <text x="-70.821121" y="-0.65970874" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-70.821121" y="-0.65970874" font-family="FreeSans" stroke-width=".26458">76</tspan></text>
   <path d="m-39.826-15.101a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="none" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="m-26.598-19.712a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="none" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
-  <g id="node16">
+  <g on:click={handleClick} id="node16">
    <path d="m163.34-86.232a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="161.59521" y="-81.937805" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="161.59521" y="-81.937805" font-family="FreeSans" stroke-width=".26458">16</tspan></text>
   </g>
@@ -92,11 +95,11 @@
    <path d="m-29.286 22.26a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" opacity=".997"/>
    <path d="m-41.662 26.795a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" opacity=".997"/>
   </g>
-  <g id="node12">
+  <g on:click={handleClick} id="node12">
    <path d="m33.02-85.074a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="31.281042" y="-80.744934" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="31.281042" y="-80.744934" font-family="FreeSans" stroke-width=".26458">12</tspan></text>
   </g>
-  <g id="node13">
+  <g on:click={handleClick} id="node13">
    <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m63.527-82.035a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m63.368-85.475c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#c83737" opacity=".997"/>
@@ -104,11 +107,11 @@
    </g>
    <text x="63.268169" y="-82.866966" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="63.268169" y="-82.866966" font-family="FreeSans" stroke-width=".26458">13</tspan></text>
   </g>
-  <g id="node4">
+  <g on:click={handleClick} id="node4">
    <path d="m44.583-107a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="43.767925" y="-102.66985" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="43.767925" y="-102.66985" font-family="FreeSans" stroke-width=".26458">4</tspan></text>
   </g>
-  <g id="node3">
+  <g on:click={handleClick} id="node3">
    <g transform="translate(-80.875 -11.022)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -116,7 +119,7 @@
    </g>
    <text x="16.119255" y="-100.55479" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="16.119255" y="-100.55479" font-family="FreeSans" stroke-width=".26458">3</tspan></text>
   </g>
-  <g id="node14">
+  <g on:click={handleClick} id="node14">
    <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -124,7 +127,7 @@
    </g>
    <text x="96.042427" y="-89.498222" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="96.042427" y="-89.498222" font-family="FreeSans" stroke-width=".26458">14</tspan></text>
   </g>
-  <g id="node15">
+  <g on:click={handleClick} id="node15">
    <g transform="translate(33.341 -3.253)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -132,15 +135,15 @@
    </g>
    <text x="129.3942" y="-92.785416" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="129.3942" y="-92.785416" font-family="FreeSans" stroke-width=".26458">15</tspan></text>
   </g>
-  <g id="node5">
+  <g on:click={handleClick} id="node5">
    <path d="m156.35-105.4a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65205 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="155.53967" y="-101.10926" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="155.53967" y="-101.10926" font-family="FreeSans" stroke-width=".26458">5</tspan></text>
   </g>
-  <g id="node6">
+  <g on:click={handleClick} id="node6">
    <path d="m190.47-105.62a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65205 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="189.64459" y="-101.32762" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="189.64459" y="-101.32762" font-family="FreeSans" stroke-width=".26458">6</tspan></text>
   </g>
-  <g id="node7">
+  <g on:click={handleClick} id="node7">
    <g transform="translate(127.49 -10.2)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -148,23 +151,23 @@
    </g>
    <text x="224.44046" y="-99.69857" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="224.44046" y="-99.69857" font-family="FreeSans" stroke-width=".26458">7</tspan></text>
   </g>
-  <g id="node17">
+  <g on:click={handleClick} id="node17">
    <path d="m223.44-76.094a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="221.68703" y="-71.764969" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="221.68703" y="-71.764969" font-family="FreeSans" stroke-width=".26458">17</tspan></text>
   </g>
-  <g id="node30">
+  <g on:click={handleClick} id="node30">
    <path d="m235.24-70.981a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="233.61485" y="-66.686516" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="233.61485" y="-66.686516" font-family="FreeSans" stroke-width=".26458">30</tspan></text>
   </g>
-  <g id="node26">
+  <g on:click={handleClick} id="node26">
    <path d="m129.51-86.787a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="127.8659" y="-82.492157" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="127.8659" y="-82.492157" font-family="FreeSans" stroke-width=".26458">26</tspan></text>
   </g>
-  <g id="node28">
+  <g on:click={handleClick} id="node28">
    <path d="m146.73-77.203a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="145.09041" y="-72.908363" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="145.09041" y="-72.908363" font-family="FreeSans" stroke-width=".26458">28</tspan></text>
   </g>
-  <g id="node23">
+  <g on:click={handleClick} id="node23">
    <g transform="translate(-54.574 22.021)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -172,7 +175,7 @@
    </g>
    <text x="41.590565" y="-67.511459" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="41.590565" y="-67.511459" font-family="FreeSans" stroke-width=".26458">23</tspan></text>
   </g>
-  <g id="node22">
+  <g on:click={handleClick} id="node22">
    <g transform="translate(-80.81 35.92)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -180,7 +183,7 @@
    </g>
    <text x="15.346806" y="-53.578579" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="15.346806" y="-53.578579" font-family="FreeSans" stroke-width=".26458">22</tspan></text>
   </g>
-  <g id="node34">
+  <g on:click={handleClick} id="node34">
    <g transform="translate(-100.92 43.848)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -188,11 +191,11 @@
    </g>
    <text x="-4.7688642" y="-45.684479" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-4.7688642" y="-45.684479" font-family="FreeSans" stroke-width=".26458">34</tspan></text>
   </g>
-  <g id="node47">
+  <g on:click={handleClick} id="node47">
    <path d="m-27.602-43.671a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-29.243788" y="-39.341858" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-29.243788" y="-39.341858" font-family="FreeSans" stroke-width=".26458">47</tspan></text>
   </g>
-  <g id="node46">
+  <g on:click={handleClick} id="node46">
    <g transform="translate(-85.365 -64.99)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m37.1 30.882a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m36.941 27.442c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#c83737" opacity=".997"/>
@@ -200,20 +203,20 @@
    </g>
    <text x="-48.424862" y="-34.939651" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-48.424862" y="-34.939651" font-family="FreeSans" stroke-width=".26458">46</tspan></text>
   </g>
-  <g id="node32">
+  <g on:click={handleClick} id="node32">
    <path d="m-81.364-49.681a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-82.998451" y="-45.386852" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-82.998451" y="-45.386852" font-family="FreeSans" stroke-width=".26458">32</tspan></text>
   </g>
-  <g id="node31">
+  <g on:click={handleClick} id="node31">
    <path d="m-117.8-58.447a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-119.19326" y="-54.152157" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-119.19326" y="-54.152157" font-family="FreeSans" stroke-width=".26458">31</tspan></text>
   </g>
-  <g id="node57">
+  <g on:click={handleClick} id="node57">
    <path d="m-123.54-28.996a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-125.1923" y="-24.701313" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-125.1923" y="-24.701313" font-family="FreeSans" stroke-width=".26458">57</tspan></text>
   </g>
   <text x="-136.79135" y="-39.350876" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-136.79135" y="-39.350876" font-family="FreeSans" stroke-width=".26458">43</tspan></text>
-  <g id="node1">
+  <g on:click={handleClick} id="node1">
    <g transform="translate(-136.39 -125.3)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m37.1 30.882a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m36.941 27.442c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#c83737" opacity=".997"/>
@@ -221,39 +224,39 @@
    </g>
    <text x="-98.482674" y="-95.213348" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="3.3706px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-98.482674" y="-95.213348" font-family="FreeSans" stroke-width=".26458">1</tspan></text>
   </g>
-  <g id="node9">
+  <g on:click={handleClick} id="node9">
    <path d="m-84.689-82.726a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-85.50309" y="-78.430977" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-85.50309" y="-78.430977" font-family="FreeSans" stroke-width=".26458">9</tspan></text>
   </g>
-  <g id="node8">
+  <g on:click={handleClick} id="node8">
    <path d="m-111.96-83.8a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-112.7757" y="-79.505127" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-112.7757" y="-79.505127" font-family="FreeSans" stroke-width=".26458">8</tspan></text>
   </g>
-  <g id="node19">
+  <g on:click={handleClick} id="node19">
    <path d="m-102.61-67.659a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65207 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52462-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-104.34424" y="-63.364315" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-104.34424" y="-63.364315" font-family="FreeSans" stroke-width=".26458">19</tspan></text>
   </g>
-  <g id="node18">
+  <g on:click={handleClick} id="node18">
    <path d="m-127.97-70.682a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-129.71143" y="-66.387077" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-129.71143" y="-66.387077" font-family="FreeSans" stroke-width=".26458">18</tspan></text>
   </g>
-  <g id="node20">
+  <g on:click={handleClick} id="node20">
    <path d="m-69.315-75.398a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-70.946671" y="-71.102959" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-70.946671" y="-71.102959" font-family="FreeSans" stroke-width=".26458">20</tspan></text>
   </g>
-  <g id="node21">
+  <g on:click={handleClick} id="node21">
    <path d="m-36.524-62.503a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-37.917389" y="-58.174568" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-37.917389" y="-58.174568" font-family="FreeSans" stroke-width=".26458">21</tspan></text>
   </g>
-  <g id="node33">
+  <g on:click={handleClick} id="node33">
    <path d="m-51.591-54.727a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-53.218624" y="-50.432583" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-53.218624" y="-50.432583" font-family="FreeSans" stroke-width=".26458">33</tspan></text>
   </g>
-  <g id="node45">
+  <g on:click={handleClick} id="node45">
    <path d="m-71.109-31.193a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-72.740372" y="-26.898668" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-72.740372" y="-26.898668" font-family="FreeSans" stroke-width=".26458">45</tspan></text>
   </g>
-  <g id="node58">
+  <g on:click={handleClick} id="node58">
    <g transform="translate(-184.35 68.637)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -261,19 +264,19 @@
    </g>
    <text x="-88.193771" y="-20.89543" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-88.193771" y="-20.89543" font-family="FreeSans" stroke-width=".26458">58</tspan></text>
   </g>
-  <g id="node24">
+  <g on:click={handleClick} id="node24">
    <path d="m85.005-71.395a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65207 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="83.354309" y="-67.066307" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="83.354309" y="-67.066307" font-family="FreeSans" stroke-width=".26458">24</tspan></text>
   </g>
-  <g id="node25">
+  <g on:click={handleClick} id="node25">
    <path d="m102.77-66.764a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52512 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="101.12518" y="-62.46888" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="101.12518" y="-62.46888" font-family="FreeSans" stroke-width=".26458">25</tspan></text>
   </g>
-  <g id="node27">
+  <g on:click={handleClick} id="node27">
    <path d="m134.25-71.075a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="132.60182" y="-66.746475" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="132.60182" y="-66.746475" font-family="FreeSans" stroke-width=".26458">27</tspan></text>
   </g>
-  <g id="node29">
+  <g on:click={handleClick} id="node29">
    <g transform="translate(94.058 25.76)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -281,15 +284,15 @@
    </g>
    <text x="190.21832" y="-63.77256" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="190.21832" y="-63.77256" font-family="FreeSans" stroke-width=".26458">29</tspan></text>
   </g>
-  <g id="node35">
+  <g on:click={handleClick} id="node35">
    <path d="m25.925-42.551a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="24.287611" y="-38.256195" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="24.287611" y="-38.256195" font-family="FreeSans" stroke-width=".26458">35</tspan></text>
   </g>
-  <g id="node36">
+  <g on:click={handleClick} id="node36">
    <path d="m37.236-40.56a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="35.598431" y="-36.265488" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="35.598431" y="-36.265488" font-family="FreeSans" stroke-width=".26458">36</tspan></text>
   </g>
-  <g id="node37">
+  <g on:click={handleClick} id="node37">
    <path d="m56.6-57.753a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="54.95216" y="-53.457947" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="54.95216" y="-53.457947" font-family="FreeSans" stroke-width=".26458">37</tspan></text>
   </g>
@@ -303,19 +306,19 @@
    <path d="m14.432 30.723c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
    <path d="m16.063 29.036a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865z" fill="#008000" opacity=".997"/>
   </g>
-  <g id="node48">
+  <g on:click={handleClick} id="node48">
    <path d="m2.7607-30.969a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text transform="translate(-150.07 -119.72)" x="151.20016" y="93.045296" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="151.20016" y="93.045296" font-family="FreeSans" stroke-width=".26458">48</tspan></text>
   </g>
-  <g id="node38">
+  <g on:click={handleClick} id="node38">
    <path d="m94.363-56.22a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text transform="translate(-150.07 -119.72)" x="242.79622" y="67.793694" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="242.79622" y="67.793694" font-family="FreeSans" stroke-width=".26458">38</tspan></text>
   </g>
-  <g id="node39">
+  <g on:click={handleClick} id="node39">
    <path d="m111.72-60.091a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text transform="translate(-150.07 -119.72)" x="260.15567" y="63.922573" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="260.15567" y="63.922573" font-family="FreeSans" stroke-width=".26458">39</tspan></text>
   </g>
-  <g id="node42">
+  <g on:click={handleClick} id="node42">
    <g transform="translate(127.33 40.666)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -323,28 +326,28 @@
    </g>
    <text x="223.50035" y="-48.800148" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="223.50035" y="-48.800148" font-family="FreeSans" stroke-width=".26458">42</tspan></text>
   </g>
-  <g id="node50">
+  <g on:click={handleClick} id="node50">
    <path d="m65.468-42.279a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="63.834724" y="-37.984734" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="63.834724" y="-37.984734" font-family="FreeSans" stroke-width=".26458">50</tspan></text>
   </g>
-  <g id="node51">
+  <g on:click={handleClick} id="node51">
    <path d="m103.18-40.256a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="101.78508" y="-35.961647" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="101.78508" y="-35.961647" font-family="FreeSans" stroke-width=".26458">51</tspan></text>
   </g>
-  <g id="node53">
+  <g on:click={handleClick} id="node53">
    <path d="m145.06-33.307a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="143.42815" y="-29.011936" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="143.42815" y="-29.011936" font-family="FreeSans" stroke-width=".26458">53</tspan></text>
   </g>
-  <g id="node54">
+  <g on:click={handleClick} id="node54">
    <path d="m159.32-37.763a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="157.66809" y="-33.468426" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="157.66809" y="-33.468426" font-family="FreeSans" stroke-width=".26458">54</tspan></text>
   </g>
-  <g id="node56">
+  <g on:click={handleClick} id="node56">
    <path d="m237.6-35.129a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="235.96103" y="-30.834803" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="235.96103" y="-30.834803" font-family="FreeSans" stroke-width=".26458">56</tspan></text>
   </g>
   <text x="187.30629" y="-17.503077" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="187.30629" y="-17.503077" font-family="FreeSans" stroke-width=".26458">71</tspan></text>
-  <g id="node55">
+  <g on:click={handleClick} id="node55">
    <g transform="translate(177.18 -67.653)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m14.591 34.162a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m14.432 30.723c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -352,7 +355,7 @@
    </g>
    <text x="191.60387" y="-34.322281" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="191.60387" y="-34.322281" font-family="FreeSans" stroke-width=".26458">55</tspan></text>
   </g>
-  <g id="node52">
+  <g on:click={handleClick} id="node52">
    <g transform="translate(25.127 47.874)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -360,11 +363,11 @@
    </g>
    <text x="121.28221" y="-41.658131" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="121.28221" y="-41.658131" font-family="FreeSans" stroke-width=".26458">52</tspan></text>
   </g>
-  <g id="node40">
+  <g on:click={handleClick} id="node40">
    <path d="m141.38-48.681a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="139.76047" y="-44.386826" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="139.76047" y="-44.386826" font-family="FreeSans" stroke-width=".26458">40</tspan></text>
   </g>
-  <g id="node41">
+  <g on:click={handleClick} id="node41">
    <g transform="translate(56.158 40.589)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
     <path d="m96.322-88.701a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997"/>
     <path d="m96.163-92.14c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767z" fill="#cf0" opacity=".997"/>
@@ -372,24 +375,24 @@
    </g>
    <text x="152.56801" y="-48.90926" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="152.56801" y="-48.90926" font-family="FreeSans" stroke-width=".26458">41</tspan></text>
   </g>
-  <g id="node49">
+  <g on:click={handleClick} id="node49">
    <path d="m46.76-29.811a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="45.134617" y="-25.515863" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="45.134617" y="-25.515863" font-family="FreeSans" stroke-width=".26458">49</tspan></text>
   </g>
-  <g id="node59">
+  <g on:click={handleClick} id="node59">
    <path d="m-78.798-15.987a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-80.434341" y="-11.692664" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-80.434341" y="-11.692664" font-family="FreeSans" stroke-width=".26458">59</tspan></text>
   </g>
-  <g id="node60">
+  <g on:click={handleClick} id="node60">
    <path d="m-64.621-18.59a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-66.265846" y="-14.295203" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-66.265846" y="-14.295203" font-family="FreeSans" stroke-width=".26458">60</tspan></text>
   </g>
-  <g id="node92">
+  <g on:click={handleClick} id="node92">
    <path d="m-134.06 14.401a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 2e-3 0.0357h2.9445a1.474 1.3865 0 0 0 2e-3 -0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15917 3.4396a1.474 1.3865 0 0 0-2e-3 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-2e-3 -0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
    <text x="-135.70456" y="18.696053" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-135.70456" y="18.696053" font-family="FreeSans" stroke-width=".26458">92</tspan></text>
   </g>
   <text x="160.45638" y="-16.979412" fill="#000000" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="160.45638" y="-16.979412" font-family="FreeSans" stroke-width=".26458">70</tspan></text>
-  <g id="node44">
+  <g on:click={handleClick} id="node44">
    <g transform="translate(-.26517 -.031119)">
     <path d="m-97.024-36.332a1.474 1.3865 0 0 0-1.4738 1.3865 1.474 1.3865 0 0 0 0.0016 0.0357h2.9445a1.474 1.3865 0 0 0 0.0021-0.0357 1.474 1.3865 0 0 0-1.4743-1.3865zm-1.6314 1.6867c-0.65206 0-1.1772 0.52461-1.1772 1.1767v0.82114c0 0.65206 0.52513 1.1772 1.1772 1.1772h3.2634c0.65206 0 1.1767-0.52513 1.1767-1.1772v-0.82114c0-0.65206-0.52461-1.1767-1.1767-1.1767zm0.15916 3.4396a1.474 1.3865 0 0 0-0.0016 0.0357 1.474 1.3865 0 0 0 1.4738 1.3865 1.474 1.3865 0 0 0 1.4743-1.3865 1.474 1.3865 0 0 0-0.0021-0.0357z" fill="#cf0" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="-98.665665" y="-32.003586" fill="#ccff00" font-family="Rustico" font-size="2.9749px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-98.665665" y="-32.003586" fill="#ccff00" font-family="FreeSans" stroke-width=".26458">44</tspan></text>

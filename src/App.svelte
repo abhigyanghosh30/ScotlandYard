@@ -6,8 +6,12 @@
 
 	function handleClick(){
 		event.preventDefault();
-		data['nodevalue']=event.target.id;
-		console.log(data);
+		console.log(event.target);
+		var currTag = event.target;
+		while(!currTag.id.startsWith('node')){
+			currTag = currTag.parentNode;
+		}
+		data['nodevalue']=currTag.id.substring(4);
 	}
 	
 	function handleSubmit(){
@@ -30,7 +34,9 @@
 	}
 </script>
 <main>
-	<LondonMap/>
+	<div class="w-75 h-75 overflow-scroll">
+		<LondonMap handleClick={handleClick}/>
+	</div>
 	<form on:submit={handleSubmit}>
 		<!-- <input type="number" max="200" min="1" value={data["nodevalue"]} on:change={handleChange} name="nodevalue" required/>
 		<select on:change={handleChange} name="ticket" required>
