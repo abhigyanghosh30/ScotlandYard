@@ -1,14 +1,16 @@
 const express = require('express');
-const app = express();
+const bodyParser = require('body-parser');
 const http = require('http');
 const cors = require('cors');
 const path = require('path');
 
+const app = express();
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get('/', (req, res) => {
@@ -26,6 +28,7 @@ io.on('connection', (socket) => {
     console.log('user disconnected');
   });
 });
+
 
 server.listen(3000, () => {
   console.log('listening on *:3000');
