@@ -1,6 +1,6 @@
 <script>
 	import LondonMap from './map_final.svelte';
-	let user = {'username':null,'playertype':null}; // D for detective, T for thief
+	let user = {'username':null,'playertype':'D','roomName':null,'authenticated':false}; // D for detective, T for thief
 	let data = {'nodevalue':null,'ticket':null};
 	var socket = io();
 
@@ -12,14 +12,15 @@
 			currTag = currTag.parentNode;
 		}
 		data['nodevalue']=currTag.id.substring(4);
+		console.log(data);
 	}
 	
 	function handleSubmit(){
 		event.preventDefault();
 		if (data['nodevalue']>0) {
-			socket.emit(playertype, JSON.stringify(data));
-			delete data['nodevalue'];
-			delete data['ticket'];
+			socket.emit(user['playertype'], JSON.stringify(data));
+			data['nodevalue']=null;
+			data['ticket']=null;
 		}
 	}
 
@@ -28,38 +29,55 @@
 		console.log(response);
 	});
 
+	socket.on('user',(res)=>{
+		user['roomName'] = res;
+		user['authenticated'] = true;
+	});
+
 	function handleChange(){
+		event.preventDefault();
 		data[event.target.name] = event.target.value;
 		console.log(data);
 	}
 
 	function userChanges(){
+		event.preventDefault();
 		user[event.target.name] = event.target.value;
+		console.log(user);
 	}
 
-	function postNick(){
-		
+	function postUser(){
+		event.preventDefault();
+		socket.emit('user',JSON.stringify(user));
 	}
 </script>
 <main>
-	{#if user.username==null}
-	<form on:submit={postNick}>
-		<input type="text" on:change={userChanges} name="username" value={user["username"]} required>
+	{#if user.authenticated==false}
+	<form on:submit={postUser}>
+		<input type="text" placeholder="username" on:change={userChanges} name="username" value={user["username"]} required>
+		<input type="text" placeholder="roon-name" on:change={userChanges} name="roomName" value={user["roomName"]} >
 		<button type="submit">Submit</button>
 	</form>
-
+	
 	{:else}
-	<div class="w-75 h-75 overflow-scroll">
-		<LondonMap handleClick={handleClick}/>
+	<div class="container-fluid">
+		<div class="row">
+			{user.roomName}
+		</div>
+		<div class="row">
+			<div class="col-10 overflow-scroll">
+				<LondonMap handleClick={handleClick}/>
+			</div>
+			<form class="col-2" on:submit={handleSubmit}>
+				<!-- <input type="number" max="200" min="1" value={data["nodevalue"]} on:change={handleChange} name="nodevalue" required/> -->
+				<select on:change={handleChange} name="ticket" required>
+					<option value="T">Taxi</option>
+					<option value="B">Bus</option>
+					<option value="U">Underground</option>
+				</select>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
 	</div>
-	<form on:submit={handleSubmit}>
-		<!-- <input type="number" max="200" min="1" value={data["nodevalue"]} on:change={handleChange} name="nodevalue" required/> -->
-		<select on:change={handleChange} name="ticket" required>
-			<option value="T">Taxi</option>
-			<option value="B">Bus</option>
-			<option value="U">Underground</option>
-		</select>
-		<button type="submit">Submit</button>
-	</form>
 	{/if}
 </main>
