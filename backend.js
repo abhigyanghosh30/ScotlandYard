@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const http = require('http');
 const cors = require('cors');
 const path = require('path');
-
+const map = require('./map.json');
 const app = express();
 const server = http.createServer(app);
 const { Server } = require("socket.io");
