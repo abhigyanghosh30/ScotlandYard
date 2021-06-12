@@ -1,6 +1,6 @@
 <script>
 	import LondonMap from './map_final.svelte';
-	let user = {'username':null,'playertype':'D','roomName':null,'authenticated':false}; // D for detective, T for thief
+	let user = {'username':null,'playertype':'D','roomName':null,'authenticated':false,'players':[]}; // D for detective, T for thief
 	let data = {'nodevalue':null,'ticket':null};
 	var socket = io();
 
@@ -30,8 +30,11 @@
 	});
 
 	socket.on('user',(res)=>{
-		user['roomName'] = res;
-		user['authenticated'] = true;
+		var response = JSON.parse(res);
+		console.log(response);
+		user['roomName'] = response['roomName'];
+		user['players'] = response['players'];
+		console.log(user);
 	});
 
 	function handleChange(){
@@ -53,12 +56,22 @@
 </script>
 <main>
 	{#if user.authenticated==false}
-	<form on:submit={postUser}>
-		<input type="text" placeholder="username" on:change={userChanges} name="username" value={user["username"]} required>
-		<input type="text" placeholder="roon-name" on:change={userChanges} name="roomName" value={user["roomName"]} >
-		<button type="submit">Submit</button>
-	</form>
-	
+	<div class="container">
+		<form class="col" on:submit={postUser}>
+			<input type="text" placeholder="username" on:change={userChanges} name="username" value={user["username"]} required>
+			<input type="text" placeholder="roon-name" on:change={userChanges} name="roomName" value={user["roomName"]} >
+			<button type="submit">Submit</button>
+		</form>
+		<div class="col">
+			<ul>
+				{#each user.players as player }
+				<li>{player.username}</li>
+				{/each}
+			</ul>
+
+		</div>
+	</div>
+	<button class="btn btn-primary" on:click={()=>{user.authenticated=true;}}>Start Game</button>
 	{:else}
 	<div class="container-fluid">
 		<div class="row">
@@ -70,7 +83,7 @@
 			</div>
 			<form class="col-2" on:submit={handleSubmit}>
 				<!-- <input type="number" max="200" min="1" value={data["nodevalue"]} on:change={handleChange} name="nodevalue" required/> -->
-				<select on:change={handleChange} name="ticket" required>
+				<select on:change={handleChange} name="ticket" default="T" required>
 					<option value="T">Taxi</option>
 					<option value="B">Bus</option>
 					<option value="U">Underground</option>

@@ -7,6 +7,7 @@ const path = require('path');
 const app = express();
 const server = http.createServer(app);
 const { Server } = require("socket.io");
+const { response } = require('express');
 const io = new Server(server);
 
 app.use(express.static('public'));
@@ -25,7 +26,19 @@ app.use(cors());
 //   })
 //   client.close();
 // });
+class DefaultDict {
+  constructor(defaultInit) {
+    return new Proxy({}, {
+      get: (target, name) => name in target ?
+        target[name] :
+        (target[name] = typeof defaultInit === 'function' ?
+          new defaultInit().valueOf() :
+          defaultInit)
+    })
+  }
+}
 
+var room_details = new DefaultDict(Array);
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname,'public','/index.html'));
@@ -42,7 +55,11 @@ io.on('connection', (socket) => {
       newRoomName = data['roomName'];
     }
     socket.join(newRoomName);
-    io.to(newRoomName).emit('user',newRoomName);
+    if(!room_details[newRoomName].includes(data['username'])){
+      room_details[newRoomName].push({'username':data['username'],'socketid':socket.id});
+    }
+    var resp = {'roomName':newRoomName,'players':room_details[newRoomName]};
+    io.to(newRoomName).emit('user',JSON.stringify(resp));
   });
   
   socket.on('D',(msg)=>{
@@ -53,6 +70,20 @@ io.on('connection', (socket) => {
   });
 
   socket.on('disconnect', () => {
+    let player_room;
+    for(var room in room_details){
+      console.log(room,room_details[room]);
+      for(var player in room_details[room]){
+          console.log(room,room_details[room],room_details[room][player]);
+          if(room_details[room][player]['socketid']==socket.id){
+          room_details[room].splice(player,1);
+          player_room=room;
+        }
+      }
+    }
+    var resp = {'roomName':player_room,'players':room_details[player_room]};
+    io.to(player_room).emit('user',JSON.stringify(resp));
+    console.log(resp);
     console.log('disconnected',socket.id);
   });
 
