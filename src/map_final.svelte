@@ -1,7 +1,7 @@
 <script>
     export let handleClick;
 </script>
-<svg width="423.33mm" height="317.5mm" version="1.1" viewBox="0 0 423.33 317.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="423.33mm" version="1.1" viewBox="0 0 423.33 317.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <g>
   <rect x="6.1457" y="11.46" width="396.67" height="297.32" fill="#fff" opacity=".997" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".26458"/>
   <g fill="#0f0">

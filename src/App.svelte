@@ -78,7 +78,7 @@
 			{user.roomName}
 		</div>
 		<div class="row">
-			<div class="col-10 overflow-scroll">
+			<div class="col-10 overflow-scroll" style="max-height: 90vh ;">
 				<LondonMap handleClick={handleClick}/>
 			</div>
 			<form class="col-2" on:submit={handleSubmit}>
