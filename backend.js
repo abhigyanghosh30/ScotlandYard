@@ -83,7 +83,7 @@ io.on('connection', (socket) => {
   });
 
   socket.on('disconnect', () => {
-    var player_room = Array.from(socket.rooms)[1];
+    var room = Array.from(socket.rooms)[1];
     for(var player in room_details[room]){
       console.log(room,room_details[room],room_details[room][player]);
       if(room_details[room][player]['socketid']==socket_id){
@@ -91,8 +91,8 @@ io.on('connection', (socket) => {
         player_room=room;
       }
     }
-    var resp = {'roomName':player_room,'players':room_details[player_room]};
-    io.to(player_room).emit('user',JSON.stringify(resp));
+    var resp = {'roomName':room,'players':room_details[room]};
+    io.to(room).emit('user',JSON.stringify(resp));
     console.log(resp);
     console.log('disconnected',socket.id);
   });

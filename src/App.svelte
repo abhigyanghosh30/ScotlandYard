@@ -15,6 +15,9 @@
 		})
 		.then((res)=>{return res.json()})
 		.then((resp)=>{london_map_data=resp;});
+		var element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+		var svg = document.getElementById("svg-london-map");
+		svg.appendChild(element);
 	});
 
 	// Form and State Changes
@@ -43,8 +46,15 @@
 	}
 	//
 	function refreshGraphic(){
-		user.room.players.forEach(()=>{
-			;;
+		user.players.forEach((el)=>{
+			var lastNode = el.nodes.slice(-1)[0];
+			var c = document.getElementById("node"+lastNode).lastChild;
+			var xpos = c.getAttribute("x");
+			var ypos = c.getAttribute("y");
+
+
+
+
 		});
 	}
 
@@ -86,6 +96,7 @@
 
 	socket.on('start',(res)=>{
 		console.log(res);
+		res = JSON.parse(res);
 		res.forEach(element => {
 			if(element.username == user.username){
 				nodetravel.push(element.nodes.slice(-1)[0]);
