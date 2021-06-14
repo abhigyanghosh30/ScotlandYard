@@ -1,8 +1,23 @@
 <script>
 	import LondonMap from './map_final.svelte';
+	import { onMount } from 'svelte';
+
 	let user = {'username':null,'playertype':'D','roomName':null,'authenticated':false,'players':[]}; // D for detective, T for thief
 	let data = {'nodevalue':null,'ticket':null};
+	let nodetravel = [];
+	let london_map_data = {};
 	var socket = io();
+
+	onMount(async()=>{
+		fetch('http://localhost:3000/map',
+		{
+			method:"GET",
+		})
+		.then((res)=>{return res.json()})
+		.then((resp)=>{london_map_data=resp;});
+	});
+
+	// Form and State Changes
 
 	function handleClick(){
 		event.preventDefault();
@@ -15,7 +30,32 @@
 		console.log(data);
 	}
 	
-	function handleSubmit(){
+	function handleChange(){
+		event.preventDefault();
+		data[event.target.name] = event.target.value;
+		console.log(data);
+	}
+
+	function userChanges(){
+		event.preventDefault();
+		user[event.target.name] = event.target.value;
+		console.log(user);
+	}
+	//
+	function refreshGraphic(){
+		user.room.players.forEach(()=>{
+			;;
+		});
+	}
+
+	// Socket Emit Events
+
+	function postUser(){
+		event.preventDefault();
+		socket.emit('user',JSON.stringify(user));
+	}
+
+	function playMove(){
 		event.preventDefault();
 		if (data['nodevalue']>0) {
 			socket.emit(user['playertype'], JSON.stringify(data));
@@ -23,6 +63,13 @@
 			data['ticket']=null;
 		}
 	}
+
+	function startGame(){
+		event.preventDefault();
+		socket.emit('start');
+	}
+
+	// Socket Recieve Event 
 
 	socket.on('D',function(res){
 		var response = JSON.parse(res);
@@ -37,22 +84,16 @@
 		console.log(user);
 	});
 
-	function handleChange(){
-		event.preventDefault();
-		data[event.target.name] = event.target.value;
-		console.log(data);
-	}
-
-	function userChanges(){
-		event.preventDefault();
-		user[event.target.name] = event.target.value;
-		console.log(user);
-	}
-
-	function postUser(){
-		event.preventDefault();
-		socket.emit('user',JSON.stringify(user));
-	}
+	socket.on('start',(res)=>{
+		console.log(res);
+		res.forEach(element => {
+			if(element.username == user.username){
+				nodetravel.push(element.nodes.slice(-1)[0]);
+			}
+		});
+		refreshGraphic();
+		user.authenticated=true;
+	});
 </script>
 <main>
 	{#if user.authenticated==false}
@@ -71,7 +112,7 @@
 
 		</div>
 	</div>
-	<button class="btn btn-primary" on:click={()=>{user.authenticated=true;}}>Start Game</button>
+	<button class="btn btn-primary" on:click={startGame}>Start Game</button>
 	{:else}
 	<div class="container-fluid">
 		<div class="row">
@@ -81,7 +122,7 @@
 			<div class="col-10 overflow-scroll" style="max-height: 90vh ;">
 				<LondonMap handleClick={handleClick}/>
 			</div>
-			<form class="col-2" on:submit={handleSubmit}>
+			<form class="col-2" on:submit={playMove}>
 				<!-- <input type="number" max="200" min="1" value={data["nodevalue"]} on:change={handleChange} name="nodevalue" required/> -->
 				<select on:change={handleChange} name="ticket" default="T" required>
 					<option value="T">Taxi</option>

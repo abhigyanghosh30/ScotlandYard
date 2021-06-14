@@ -3,11 +3,10 @@ const bodyParser = require('body-parser');
 const http = require('http');
 const cors = require('cors');
 const path = require('path');
-const map = require('./map.json');
+const londonmap = require('./map.json');
 const app = express();
 const server = http.createServer(app);
 const { Server } = require("socket.io");
-const { response } = require('express');
 const io = new Server(server);
 
 app.use(express.static('public'));
@@ -44,9 +43,14 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname,'public','/index.html'));
 });
 
+app.get('/map', (req, res) => {
+  res.json(londonmap);
+});
+
 io.on('connection', (socket) => {
   console.log('a user connected',socket.id);
 
+  // new user joins or a person joins a room 
   socket.on('user',(msg)=>{
     console.log(msg);
     data = JSON.parse(msg);
@@ -56,12 +60,13 @@ io.on('connection', (socket) => {
     }
     socket.join(newRoomName);
     if(!room_details[newRoomName].includes(data['username'])){
-      room_details[newRoomName].push({'username':data['username'],'socketid':socket.id});
+      room_details[newRoomName].push({'username':data['username'],'socketid':socket.id,'nodes':[]});
     }
     var resp = {'roomName':newRoomName,'players':room_details[newRoomName]};
     io.to(newRoomName).emit('user',JSON.stringify(resp));
   });
   
+  // When a detective moves, show others the movement.
   socket.on('D',(msg)=>{
     console.log(msg);
     console.log(socket.rooms);
@@ -69,16 +74,21 @@ io.on('connection', (socket) => {
     io.to(rooms_arr[0]).to(rooms_arr[1]).emit('D',msg);
   });
 
+  socket.on('start',()=>{
+    var player_room = Array.from(socket.rooms)[1];
+    for(var player in room_details[player_room]){
+      room_details[player_room][player]['nodes'] =[ Math.floor((Math.random() * 100) + 1)];
+    }
+    io.to(player_room).emit('start',JSON.stringify(room_details[player_room]));
+  });
+
   socket.on('disconnect', () => {
-    let player_room;
-    for(var room in room_details){
-      console.log(room,room_details[room]);
-      for(var player in room_details[room]){
-          console.log(room,room_details[room],room_details[room][player]);
-          if(room_details[room][player]['socketid']==socket.id){
-          room_details[room].splice(player,1);
-          player_room=room;
-        }
+    var player_room = Array.from(socket.rooms)[1];
+    for(var player in room_details[room]){
+      console.log(room,room_details[room],room_details[room][player]);
+      if(room_details[room][player]['socketid']==socket_id){
+        room_details[room].splice(player,1);
+        player_room=room;
       }
     }
     var resp = {'roomName':player_room,'players':room_details[player_room]};
@@ -88,7 +98,6 @@ io.on('connection', (socket) => {
   });
 
 });
-
 
 server.listen(3000, () => {
   console.log('listening on *:3000');
