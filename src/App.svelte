@@ -47,14 +47,14 @@
 	//
 	function refreshGraphic(){
 		user.players.forEach((el)=>{
+			console.log(el);
 			var lastNode = el.nodes.slice(-1)[0];
+			console.log(lastNode);
 			var c = document.getElementById("node"+lastNode).lastChild;
 			var xpos = c.getAttribute("x");
 			var ypos = c.getAttribute("y");
-
-
-
-
+			var player_piece = document.getElementById("p_blue");
+			player_piece.setAttribute("transform","translate(155mm,-101mm)");
 		});
 	}
 
@@ -95,15 +95,17 @@
 	});
 
 	socket.on('start',(res)=>{
-		console.log(res);
 		res = JSON.parse(res);
+		console.log(res);
+		user.authenticated=true;
+		user.players = res;
 		res.forEach(element => {
+			console.log(element,user.username);
 			if(element.username == user.username){
 				nodetravel.push(element.nodes.slice(-1)[0]);
 			}
 		});
-		refreshGraphic();
-		user.authenticated=true;
+		setTimeout(refreshGraphic,1000);
 	});
 </script>
 <main>

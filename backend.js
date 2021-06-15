@@ -77,7 +77,7 @@ io.on('connection', (socket) => {
   socket.on('start',()=>{
     var player_room = Array.from(socket.rooms)[1];
     for(var player in room_details[player_room]){
-      room_details[player_room][player]['nodes'] =[ Math.floor((Math.random() * 100) + 1)];
+      room_details[player_room][player]['nodes'] =[ Math.floor((Math.random() * 30) + 1)];
     }
     io.to(player_room).emit('start',JSON.stringify(room_details[player_room]));
   });
