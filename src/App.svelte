@@ -14,10 +14,10 @@
 			method:"GET",
 		})
 		.then((res)=>{return res.json()})
-		.then((resp)=>{london_map_data=resp;});
-		var element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-		var svg = document.getElementById("svg-london-map");
-		svg.appendChild(element);
+		.then((resp)=>{
+			london_map_data=resp;
+			document.addEventListener('click',getSVG,false);
+		});
 	});
 
 	// Form and State Changes
@@ -44,7 +44,28 @@
 		user[event.target.name] = event.target.value;
 		console.log(user);
 	}
-	//
+
+	// SVG Related stuff
+	// const svg = document.getElementById('svg-london-map');
+	// const NS = svg.getAttribute('xmlns');
+	// const player = document.createElementNS(NS, 'circle');
+	// player.setAttribute('r', 10);
+	// svg.appendChild(svg);
+	
+	function getSVG(e){
+		var svg = document.getElementById('svg-london-map');
+		var NS = svg.getAttribute('xmlns');
+		var player = document.createElementNS(NS, 'circle');
+		player.setAttribute('r', 10);
+		var pt = svg.createSVGPoint();
+		pt.x = e.clientX;
+		pt.y = e.clientY;
+		var svgP = pt.matrixTransform( svg.getScreenCTM().inverse() );
+		player.setAttribute('cx',svgP.x);
+		player.setAttribute('cy',svgP.y);
+		svg.appendChild(player);
+	}
+	
 	function refreshGraphic(){
 		user.players.forEach((el)=>{
 			console.log(el);
@@ -53,8 +74,8 @@
 			var c = document.getElementById("node"+lastNode).lastChild;
 			var xpos = c.getAttribute("x");
 			var ypos = c.getAttribute("y");
-			var player_piece = document.getElementById("p_blue");
-			player_piece.setAttribute("transform","translate(155mm,-101mm)");
+			// var player_piece = document.getElementById("p_blue");
+			// player_piece.setAttribute("transform","translate(155mm,-101mm)");
 		});
 	}
 
@@ -105,7 +126,7 @@
 				nodetravel.push(element.nodes.slice(-1)[0]);
 			}
 		});
-		setTimeout(refreshGraphic,1000);
+		
 	});
 </script>
 <main>
